@@ -154,3 +154,6 @@ body{
     padding-top: 10%;
 }
 
+.flex-item.item-2 {
+    border-radius: 25px;
+}
