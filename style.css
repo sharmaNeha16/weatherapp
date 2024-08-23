@@ -139,7 +139,7 @@ body{
 
 .item-4 .grid-container-inner{
     border-radius: 25px;
-    background-color: aqua;
+    background-color: powderblue;
 }
 
 .flex-container .flex-item-top {
@@ -150,6 +150,7 @@ body{
     padding-top: 5px;
 }
 
-.flex-container-inner .item-1 {
+.flex-item-top-inner {
     padding-top: 10%;
 }
+

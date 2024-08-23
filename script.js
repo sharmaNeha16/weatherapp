@@ -88,21 +88,18 @@ function callWeatherApi(city) {
     document.querySelector("#city").innerHTML = city
     const options = {method: 'GET'};
 
-    response = localStorage.getItem("weater");
-    if (response.timelines) {
-        loadData(response)
-    } else {
-        fetch('https://api.tomorrow.io/v4/weather/forecast?location=' + city + '&apikey=Ejjyr7PM8frvXy2JnnsYmlaRaIJ4KTba', options)
-            .then(response => response.json())
-            .then(response => {
-                localStorage.setItem("weater", response);
-                loadData(response)
-            }
-        
-        )
-        .catch (err => console.error(err));
+ 
+    fetch('https://api.tomorrow.io/v4/weather/forecast?location=' + city + '&apikey=Ejjyr7PM8frvXy2JnnsYmlaRaIJ4KTba', options)
+        .then(response => response.json())
+        .then(response => {
+            localStorage.setItem("weater", response);
+            loadData(response)
+        }
     
-    }
+    )
+    .catch (err => console.error(err));
+    
+    
     
        
 }
