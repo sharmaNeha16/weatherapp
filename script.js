@@ -40,8 +40,9 @@ function loadData(response) {
     for (let i = 0, j=0; i < 5; i++) {
 
         let hourData = weatherObj.timelines.hourly[i]
-        var fiveHour = document.querySelectorAll('.flex-container .item-4 .item-' + (i+1) +' .grid-item');
-        fiveHour[0].innerHTML = new Date(hourData.time).getHours()
+        var fiveHour = document.querySelectorAll('.flex-container .item-4 .item-' + (i + 1) + ' .grid-item');
+        let hours = new Date(hourData.time).getHours();
+        fiveHour[0].innerHTML = hours + ' ' + (hours >=0 && hours < 12 ? 'AM' : 'PM')
         fiveHour[1].innerHTML = hourData.values.temperature + '  \u00B0C'; 
         fiveHour[2].innerHTML = hourData.values.windSpeed + 'km/hr';
         fiveHour[3].innerHTML = hourData.values.humidity;
