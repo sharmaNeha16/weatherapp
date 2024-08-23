@@ -1,0 +1,155 @@
+body{
+    font-family: arial,sans-serif;
+    background-image: url("background-weather.avif");
+}
+
+.flex-container{
+    width:100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:center;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    
+    /* align-items: center; */
+}
+
+
+.flex-item{
+    /* align-self: flex-start; */
+    height: 360px;
+    width: 635px;
+    background: lightblue;
+    border: none;
+    align-self:center ;
+  
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+  }
+  .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: none;
+    padding: 0px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .item-large{
+    grid-column: 3 / 5;
+  }
+
+
+  
+.flex-container-inner{
+    width:100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:center;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    flex-direction: row;
+    
+    /* align-items: center; */
+}
+
+
+
+.flex-item-inner{
+    /* align-self: flex-start; */
+    height: 255px;
+    width: 40%;
+    background: lightblue;
+    border: none;
+    align-self:center ;
+  
+}
+
+.hour{
+    width: 15%;
+}
+
+.temperature {
+    font-size: 50px;
+}
+
+.grid-container-inner {
+    display: grid;
+    grid-template-columns: auto;
+    /* background-color: #2196F3; */
+    padding: 1px;
+    height: 100%;
+   
+  }
+
+
+  .flex-item-inner2{
+    /* align-self: flex-start; */
+    height: 255px;
+    width: 70px;
+    background: lightblue;
+    border: none;
+    align-self:center ;
+  
+}
+
+.grid-item {
+    border: none;
+}
+
+.grid-container-inner2 {
+    display: grid;
+    grid-template-columns: auto;
+    /* background-color: #2196F3; */
+    padding: 1px;
+  }
+
+  h2 {
+    padding: 10px;
+    text-align: center;
+  }
+
+
+#city {
+    font-size: 40px;
+    align-content: center;
+    text-align: center;
+    padding-top: 12%;
+}
+
+
+#time {
+    font-size: 65px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+
+#dayDate {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.item-4 .grid-container-inner{
+    border-radius: 25px;
+    background-color: aqua;
+}
+
+.flex-container .flex-item-top {
+    border-radius: 25px;
+}
+
+.item-4 .flex-container-inner {
+    padding-top: 5px;
+}
+
+.flex-container-inner .item-1 {
+    padding-top: 10%;
+}
